@@ -1,5 +1,7 @@
 import { Grid, Box } from "@chakra-ui/react";
 import Sidebar from "./components/Sidebar";
+import About from "./components/About";
+import ExperienceTabs from "./components/Experience/ExperienceTabs";
 
 export default function App() {
   return (
@@ -14,6 +16,11 @@ export default function App() {
         <Sidebar />
       </Box>
 
+
+      <Box display="flex" flexDirection="column" gap={12}>
+        <About />
+        <ExperienceTabs />
+      </Box>
     </Grid>
   );
 }

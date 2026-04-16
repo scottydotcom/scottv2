@@ -1,3 +1,4 @@
+// theme/index.js
 import { extendTheme } from "@chakra-ui/react";
 
 const theme = extendTheme({
@@ -7,59 +8,79 @@ const theme = extendTheme({
   },
 
   colors: {
+    // Warm beige → rosewood gradient
     brand: {
-      100: "#ffe8f0",
-      200: "#ffb3c8",
-      300: "#ff7aa1",
-      400: "#ff3f7a",
-      500: "#ff0055",
-      600: "#cc0044",
-      700: "#990033",
-      800: "#660022",
-      900: "#330011",
+      50:  "#f8f3ef",
+      100: "#e9ded4",
+      200: "#d8c3b3",
+      300: "#c7a892",
+      400: "#b68d72",
+      500: "#a57352",   // primary accent (warm beige-brown)
+      600: "#8a5c3f",
+      700: "#6f4630",
+      800: "#543120",
+      900: "#3a1e14",
     },
 
-    accent: {
-      50: "#e8faff",
-      500: "#00c8ff",
+    // Olive greens (muted, natural)
+    olive: {
+      50:  "#f4f6f1",
+      100: "#e3e8d9",
+      200: "#c7d0b3",
+      300: "#aab88d",
+      400: "#8ea067",
+      500: "#73874e",   // main olive
+      600: "#5b6b3d",
+      700: "#44502d",
+      800: "#2d351d",
+      900: "#171c0e",
     },
 
-    highlight: "#5271AA",
-    softBlue: "#AFCBFF",
-    sand: "#CDB88F",
-
-    zinc: {
-      50: "#fafafa",
-      100: "#f4f4f5",
-      200: "#e4e4e7",
-      300: "#d4d4d8",
-      400: "#a1a1aa",
-      500: "#71717a",
-      600: "#52525b",
-      700: "#3f3f46",
-      800: "#27272a",
-      900: "#18181b",
-      950: "#09090b",
+    // Deep muted blues (moody, atmospheric)
+    blue: {
+      50:  "#eef4fa",
+      100: "#d4e0ef",
+      200: "#a9c1df",
+      300: "#7ea2cf",
+      400: "#5373b5",
+      500: "#3a558f",   // main blue
+      600: "#2d426f",
+      700: "#20304f",
+      800: "#141e30",
+      900: "#0a101a",
     },
   },
 
+  // Semantic tokens for dark mode
   semanticTokens: {
     colors: {
       bg: {
-        default: "#0a192f",
-        _dark: "#0a192f",
+        default: "#0f0f0d",   // warm charcoal
+        _dark: "#0f0f0d",
+      },
+      surface: {
+        default: "rgba(255,255,255,0.04)", // subtle cards
+        _dark: "rgba(255,255,255,0.04)",
       },
       text: {
-        default: "#ccd6f6",
-        _dark: "#ccd6f6",
+        default: "#f2eee9",   // warm off-white
+        _dark: "#f2eee9",
       },
       muted: {
-        default: "#8892b0",
-        _dark: "#8892b0",
+        default: "#b8b3ac",   // warm muted beige
+        _dark: "#b8b3ac",
       },
       accent: {
-        default: "accent.500",
-        _dark: "accent.500",
+        default: "brand.500", // warm beige accent
+        _dark: "brand.500",
+      },
+      highlight: {
+        default: "blue.400",  // subtle blue highlight
+        _dark: "blue.400",
+      },
+      success: {
+        default: "olive.400",
+        _dark: "olive.400",
       },
     },
   },
