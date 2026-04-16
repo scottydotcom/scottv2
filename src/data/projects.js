@@ -19,7 +19,7 @@ export const projects = [
     title: "Quick Chat",
     description: "A blog that allows you to interact and talk with users in real-time.",
     imageUrl: "QC.png",
-    tags: ["JavaScript", "HTML", "CSS"],
+    tags: ["JavaScript", "Node.js", "HTML", "CSS"],
     link: "https://github.com/scottydotcom/quickchat",
     open: "https://quickchatblog.netlify.app/",
   },
