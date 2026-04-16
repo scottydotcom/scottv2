@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 
-export default function About() {
+const About = () => {
   return (
     <Box id="about">
       <Heading size="md" mb={4} color="accent">
@@ -13,4 +13,6 @@ export default function About() {
       </Text>
     </Box>
   );
-}
+};
+
+export default About;

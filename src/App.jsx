@@ -4,7 +4,7 @@ import About from "./components/About";
 import ExperienceTabs from "./components/Experience/ExperienceTabs";
 import Projects from "./components/Projects/Projects";
 
-export default function App() {
+const App = () => {
   return (
     <Grid
       templateColumns={["1fr", "300px 1fr"]}
@@ -17,7 +17,6 @@ export default function App() {
         <Sidebar />
       </Box>
 
-
       <Box display="flex" flexDirection="column" gap={12}>
         <About />
         <ExperienceTabs />
@@ -25,4 +24,6 @@ export default function App() {
       </Box>
     </Grid>
   );
-}
+};
+
+export default App;

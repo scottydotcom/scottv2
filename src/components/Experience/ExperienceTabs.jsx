@@ -11,7 +11,7 @@ import {
 import { experience } from "../../data/experience";
 import { useEffect, useRef, useState } from "react";
 
-export default function ExperienceTabs() {
+const ExperienceTabs = () => {
   const tabRefs = useRef([]);
   const [highlightY, setHighlightY] = useState(0);
   const [highlightH, setHighlightH] = useState(0);
@@ -24,7 +24,6 @@ export default function ExperienceTabs() {
     }
   };
 
-  // Initialize highlight on first render
   useEffect(() => {
     const first = tabRefs.current[0];
     if (first) {
@@ -39,13 +38,8 @@ export default function ExperienceTabs() {
         Experience
       </Heading>
 
-      <Tabs
-        orientation="vertical"
-        variant="unstyled"
-        onChange={handleTabChange}
-      >
+      <Tabs orientation="vertical" variant="unstyled" onChange={handleTabChange}>
         <Box position="relative">
-          {/* Glowing highlight bar */}
           <Box
             position="absolute"
             right="-2px"
@@ -58,12 +52,7 @@ export default function ExperienceTabs() {
             boxShadow="0 0 12px accent"
           />
 
-          <TabList
-            borderRight="1px solid"
-            borderColor="surface"
-            pr={4}
-            minW="180px"
-          >
+          <TabList borderRight="1px solid" borderColor="surface" pr={4} minW="180px">
             {experience.map((job, i) => (
               <Tab
                 key={i}
@@ -101,4 +90,6 @@ export default function ExperienceTabs() {
       </Tabs>
     </Box>
   );
-}
+};
+
+export default ExperienceTabs;

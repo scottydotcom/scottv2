@@ -33,7 +33,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { TbBrowserMaximize } from "react-icons/tb";
 import { projects } from "../../data/projects";
 
-export default function Projects() {
+const Projects = () => {
   return (
     <Box id="projects">
       <Heading size="md" mb={6} color="accent">
@@ -108,4 +108,6 @@ export default function Projects() {
       </Flex>
     </Box>
   );
-}
+};
+
+export default Projects;

@@ -1,6 +1,6 @@
 import { Box, Heading, Text, VStack, Link } from "@chakra-ui/react";
 
-export default function Sidebar() {
+const Sidebar = () => {
   return (
     <Box position="sticky" top="4rem" h="fit-content">
       <Heading size="xl" color="text">Your Name</Heading>
@@ -28,4 +28,6 @@ export default function Sidebar() {
       </Text>
     </Box>
   );
-}
+};
+
+export default Sidebar;
