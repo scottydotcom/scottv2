@@ -58,7 +58,7 @@ const ExperienceTabs = () => {
                 key={i}
                 ref={(el) => (tabRefs.current[i] = el)}
                 color="muted"
-                _selected={{ color: "accent", fontWeight: "600" }}
+                _selected={{ color: "highlight", fontWeight: "600" }}
                 py={3}
                 textAlign="left"
               >
