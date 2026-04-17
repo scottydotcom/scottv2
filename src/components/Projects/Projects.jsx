@@ -20,7 +20,7 @@ const Projects = () => {
       </Heading>
 
       {/* MAIN PROJECTS — UNCHANGED */}
-      <Flex direction="column" gap={6} mb={10}>
+      <Flex direction="column" gap={6} mb={7}>
         {projects.map((project, i) => (
           <Flex
             key={i}
@@ -88,9 +88,9 @@ const Projects = () => {
       </Flex>
 
       {/* MINI PROJECTS — SAME STYLING, 3-COLUMN GRID */}
-      <Heading size="sm" mb={4} color="accent">
-        {/* Smaller Projects */}
-      </Heading>
+      {/* <Heading size="sm" mb={4} color="accent">
+        Smaller Projects
+      </Heading> */}
 
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
         {miniProjects.map((project, i) => (
