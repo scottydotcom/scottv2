@@ -35,20 +35,6 @@ const theme = extendTheme({
       800: "#2d351d",
       900: "#171c0e",
     },
-
-    // NEW ink palette (warm slate, works with beige + olive)
-    ink: {
-      50: "#f2f4f6",
-      100: "#d9dde2",
-      200: "#b8c0c8",
-      300: "#96a3af",
-      400: "#74818e",
-      500: "#5A6472",
-      600: "#4a525d",
-      700: "#3C4450",
-      800: "#2c323b",
-      900: "#1d2127",
-    },
   },
 
   semanticTokens: {

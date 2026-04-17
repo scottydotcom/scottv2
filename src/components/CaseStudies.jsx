@@ -41,10 +41,11 @@ const CaseStudies = () => {
           <Box
             key={i}
             p={6}
+            borderRadius="lg"
             borderBottom="1px solid"
             borderColor="surface"
             transition="0.2s ease"
-            _hover={{ bg: "surface" }}
+            _hover={{ bg: "surface"}}
           >
             <Heading size="md" color="text">
               {study.title}
