@@ -24,6 +24,7 @@ const Projects = () => {
             overflow="hidden"
             transition="0.35s ease"
             bg="surface"
+            backdropFilter="blur(8px)"
             _hover={{
               transform: "scale(1.03)",
               backdropFilter: "blur(18px) brightness(1.1)",

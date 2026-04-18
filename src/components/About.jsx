@@ -27,8 +27,8 @@ const About = () => {
       </Heading>
 
       <Text color="muted" maxW="600px">
-        Write a short blurb about who you are, what you do, and what drives your work.
-        Keep it warm, human, and focused on your strengths.
+        Write a short blurb about who you are, what you do, and what drives your work. Keep it warm, human, and focused
+        on your strengths.
       </Text>
 
       {/* Skills Section */}
@@ -79,33 +79,44 @@ const About = () => {
 
           <ModalBody>
             <Text color="muted" mb={4}>
-              I’m a frontend engineer who focuses on building clean, accessible, and thoughtful digital experiences. I
+              {/* I’m a frontend engineer who focuses on building clean, accessible, and thoughtful digital experiences. I
               care deeply about visual harmony, component‑driven architecture, and creating interfaces that feel
               intuitive and emotionally warm. My work blends modern engineering practices with a strong sense of
-              aesthetic polish.
+              aesthetic polish. */}
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt velit porro aliquam. Voluptates
+              consequuntur laborum inventore, voluptate nihil voluptas accusamus unde ut aliquid vitae tenetur animi
+              eligendi accusantium non!
             </Text>
 
             <Text color="muted" mb={4}>
-              I enjoy working with React, Chakra UI, Vite, and design systems. I’m passionate about workflow
-              optimization, theme design, and crafting digital environments that feel premium and intentional.
+              {/* {/* I enjoy working with React, Chakra UI, Vite, and design systems. I’m passionate about workflow */}
+              {/* optimization, theme design, and crafting digital environments that feel premium and intentional. */}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio fugiat, mollitia qui quod laboriosam
+              nulla temporibus cumque fuga. Magni incidunt nemo quae, odio velit doloremque ullam ratione ducimus aut.
             </Text>
 
             <Text color="muted" mb={4}>
-              Outside of coding, I love exploring color palettes, customizing digital tools, and building small creative
-              projects that help me refine my craft.
+              {/* Outside of coding, I love exploring color palettes, customizing digital tools, and building small creative
+              projects that help me refine my craft. */}
             </Text>
             <Text color="muted" mb={6}>
-              Outside of coding, here are a few things that inspire me and keep me balanced:
+              {/* Outside of coding, here are a few things that inspire me and keep me balanced: */}
             </Text>
 
             {/* ⭐ 3×3 Grid of Hobbies */}
             <SimpleGrid columns={[2, 3]} spacing={6} mb={6}>
               {hobbies.map((item) => (
-                <Flex key={item.text} direction="column" align="center" justify="center" gap={2} color="muted"
+                <Flex
+                  key={item.text}
+                  direction="column"
+                  align="center"
+                  justify="center"
+                  gap={2}
+                  color="muted"
                   transition="all 0.25s ease"
                   _hover={{
-                  transform: "translateY(-2px)",
-  }}
+                    transform: "translateY(-2px)",
+                  }}
                 >
                   <Box fontSize="2xl" color="highlight">
                     <item.icon />
@@ -122,3 +133,18 @@ const About = () => {
 };
 
 export default About;
+ {/* <Flex
+  as="li"
+  align="center"
+  gap={3}
+  mb={3}
+  color="muted"
+  fontSize="md"
+  position="relative"
+  pl="25px"
+  transition="all 0.25s ease"
+  _hover={{
+    transform: "scale(1.03)",
+    filter: "brightness(1.15)",
+  }}
+></Flex> */}
