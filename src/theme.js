@@ -7,22 +7,67 @@ const theme = extendTheme({
     useSystemColorMode: false,
   },
 
+  // ⭐ FONT CONFIG
+  fonts: {
+    heading: "Plus Jakarta Sans, sans-serif",
+    body: "Plus Jakarta Sans, sans-serif",
+  },
+
+  // ⭐ PREMIUM TYPOGRAPHY SCALE
+  textStyles: {
+    h1: {
+      fontSize: ["2.4rem", "3rem"],
+      fontWeight: 700,
+      lineHeight: 1.15,
+      letterSpacing: "-0.02em",
+    },
+    h2: {
+      fontSize: ["2rem", "2.4rem"],
+      fontWeight: 600,
+      lineHeight: 1.2,
+      letterSpacing: "-0.01em",
+    },
+    h3: {
+      fontSize: ["1.6rem", "1.8rem"],
+      fontWeight: 600,
+      lineHeight: 1.25,
+    },
+    h4: {
+      fontSize: ["1.3rem", "1.4rem"],
+      fontWeight: 600,
+      lineHeight: 1.3,
+    },
+    bodyLg: {
+      fontSize: "1.1rem",
+      fontWeight: 400,
+      lineHeight: 1.6,
+    },
+    body: {
+      fontSize: "1rem",
+      fontWeight: 400,
+      lineHeight: 1.65,
+    },
+    label: {
+      fontSize: "0.85rem",
+      fontWeight: 500,
+      letterSpacing: "0.02em",
+    },
+  },
+
   colors: {
-    // Warm beige → rosewood gradient (UNCHANGED)
     brand: {
       50: "#f8f3ef",
       100: "#e9ded4",
       200: "#d8c3b3",
       300: "#c7a892",
       400: "#b68d72",
-      500: "#a57352", // primary accent
+      500: "#a57352",
       600: "#8a5c3f",
       700: "#6f4630",
       800: "#543120",
       900: "#3a1e14",
     },
 
-    // Olive greens (UNCHANGED)
     olive: {
       50: "#f4f6f1",
       100: "#e3e8d9",
@@ -55,19 +100,14 @@ const theme = extendTheme({
         default: "#b8b3ac",
         _dark: "#b8b3ac",
       },
-
-      // Warm beige accent (UNCHANGED)
       accent: {
         default: "brand.500",
         _dark: "brand.500",
       },
-
-      // Warm highlight (no blue)
       highlight: {
         default: "brand.300",
         _dark: "brand.300",
       },
-
       success: {
         default: "olive.400",
         _dark: "olive.400",

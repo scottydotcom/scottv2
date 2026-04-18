@@ -41,7 +41,7 @@ const Sidebar = () => {
 
 
       <Text mt={10} color="muted" fontSize="sm">
-        © 2026 Your Name. All rights reserved.
+      © {new Date().getFullYear()} Your Name. All rights reserved.
       </Text>
     </Box>
   );
