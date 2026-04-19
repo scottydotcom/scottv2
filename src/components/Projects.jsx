@@ -38,7 +38,7 @@ const Projects = () => {
 
             <Box flex="1">
               <Flex justify="space-between" align="center">
-                <Heading size="md" color="text">
+                <Heading size="md" color="subtleText">
                   {project.title}
                 </Heading>
 
@@ -103,7 +103,7 @@ const Projects = () => {
 
             <Box flex="1">
               <Flex justify="space-between" align="center">
-                <Heading size="sm" color="text">
+                <Heading size="sm" color="subtleText">
                   {project.title}
                 </Heading>
 

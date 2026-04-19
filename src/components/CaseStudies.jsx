@@ -49,7 +49,7 @@ const CaseStudies = () => {
               transform: "scale(1.03)",
             }}
           >
-            <Heading size="md" color="text">
+            <Heading size="md" color="subtleText">
               {study.title}
             </Heading>
 
@@ -76,7 +76,7 @@ const CaseStudies = () => {
       <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
         <ModalOverlay />
 
-        <ModalContent bg="bg" color="text" border="1px solid" borderColor="surface">
+        <ModalContent bg="bg" color="subtleText" border="1px solid" borderColor="surface">
           <ModalHeader>{caseStudies[currentIndex].title}</ModalHeader>
           <ModalCloseButton />
 

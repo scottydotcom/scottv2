@@ -3,7 +3,7 @@ import { Box, Heading, Text, VStack, HStack, Link } from "@chakra-ui/react";
 const Sidebar = () => {
   return (
     <Box position="sticky" top="4rem" h="fit-content">
-      <Heading size="xl" color="text">
+      <Heading size="xl" color="subtleText">
         Your Name
       </Heading>
       <Text color="muted" mt={2}>
@@ -51,7 +51,7 @@ const Sidebar = () => {
 
       {/* Contact */}
       <Box mt={10}>
-        <Text color="text" fontWeight="600" mb={3}>
+        <Text color="subtleText" fontWeight="600" mb={3}>
           Contact
         </Text>
 

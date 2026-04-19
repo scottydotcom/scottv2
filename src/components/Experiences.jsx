@@ -93,16 +93,16 @@ const ExperienceTabs = () => {
         <TabPanels pl={6}>
           {experience.map((job, i) => (
             <TabPanel key={i}>
-              <Heading size="md" color="text">
+              <Heading size="md" color="subtleText">
                 {job.role} @ {job.company}
               </Heading>
 
-              <Text color="muted" mt={1} mb={4}>
+              <Text color="subtleText" mt={1} mb={4}>
                 {job.date}
               </Text>
 
               {job.bullets.map((b, idx) => (
-                <Text key={idx} mb={2} color="text">
+                <Text key={idx} mb={2} color="muted">
                   ▹ {b}
                 </Text>
               ))}

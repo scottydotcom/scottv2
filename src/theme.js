@@ -92,6 +92,10 @@ const theme = extendTheme({
         default: "rgba(255,255,255,0.04)",
         _dark: "rgba(255,255,255,0.04)",
       },
+      subtleText: {
+        default: "#d8d3cc",
+        _dark: "#d8d3cc",
+      },
       text: {
         default: "#f2eee9",
         _dark: "#f2eee9",
