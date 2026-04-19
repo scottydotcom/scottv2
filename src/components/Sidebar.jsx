@@ -72,6 +72,9 @@ const Sidebar = () => {
 
       <Text mt={10} color="muted" fontSize="sm">
         © {new Date().getFullYear()} Your Name. All rights reserved.
+        {/* [Your Name]. All work shown is original and provided for evaluation only.
+        Reuse, copying, or redistribution is not permitted. */}
+
       </Text>
     </Box>
   );

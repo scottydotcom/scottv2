@@ -22,18 +22,19 @@ const About = () => {
 
   return (
     <Box id="about">
-      <Heading size="md" mb={4} color="accent">
+      <Heading size="md" mb={4} color="accent" >
         About Me
       </Heading>
 
-      <Text color="muted" maxW="600px">
+      <Text color="muted" maxW="600px" lineHeight="1.7" mb={3}>
         Write a short blurb about who you are, what you do, and what drives your work. Keep it warm, human, and focused
         on your strengths.
       </Text>
 
       {/* Skills Section */}
       <Box mt={2}>
-        <Heading size="sm" color="accent" mb={3}>
+        <Heading size="sm" color="highlight" mb={3} letterSpacing="0.5px"
+          fontWeight="600">
           Skills I Use
         </Heading>
 
@@ -45,10 +46,14 @@ const About = () => {
               py={1}
               borderRadius="md"
               bg="surface"
-              color="highlight"
+              color="muted"
               fontSize="sm"
               border="1px solid"
               borderColor="surface"
+              _hover={{
+              transform: "scale(1.05)",
+              filter: "brightness(1.15)",
+              }}
             >
               {skill}
             </Box>
@@ -56,7 +61,28 @@ const About = () => {
         </Flex>
       </Box>
 
-      <Link onClick={onOpen} color="accent" cursor="pointer" display="inline-block" mt={2}>
+      <Link onClick={onOpen}
+       color="highlight"
+       cursor="pointer" 
+       display="inline-block" 
+       mt={3}
+       position="relative"
+      _after={{
+      content: '""',
+      position: "absolute",
+      bottom: "-2px",
+      left: "0",
+      width: "0%",                 // start hidden
+      height: "1px",
+      backgroundColor: "highlight",
+      transition: "width 0.25s ease",
+  }}
+  _hover={{
+    _after: {
+      width: "100%",             // animate like sidebar
+    },
+  }}
+      >
         Read More →
       </Link>
 
@@ -108,15 +134,19 @@ const About = () => {
               {hobbies.map((item) => (
                 <Flex
                   key={item.text}
-                  direction="column"
-                  align="center"
-                  justify="center"
-                  gap={2}
-                  color="muted"
-                  transition="all 0.25s ease"
-                  _hover={{
-                    transform: "translateY(-2px)",
-                  }}
+  as="li"
+  align="center"
+  gap={3}
+  mb={3}
+  color="muted"
+  fontSize="md"
+  position="relative"
+  pl="25px"
+  transition="all 0.25s ease"
+  _hover={{
+    transform: "scale(1.03)",
+    filter: "brightness(1.15)",
+  }}
                 >
                   <Box fontSize="2xl" color="highlight">
                     <item.icon />
@@ -148,3 +178,13 @@ export default About;
     filter: "brightness(1.15)",
   }}
 ></Flex> */}
+
+                  // direction="column"
+                  // align="center"
+                  // justify="center"
+                  // gap={2}
+                  // color="muted"
+                  // transition="all 0.25s ease"
+                  // _hover={{
+                  //   transform: "translateY(-2px)",
+                  // }}

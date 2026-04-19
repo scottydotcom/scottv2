@@ -126,7 +126,7 @@ const Projects = () => {
               </Text>
 
               <Flex gap={2} mt={3} wrap="wrap">
-                {project.tech.map((tag, idx) => (
+                {project.tags.map((tag, idx) => (
                   <Tag key={idx} bg="olive.700" color="olive.100">
                     {tag}
                   </Tag>

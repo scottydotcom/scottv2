@@ -133,7 +133,7 @@ export const miniProjects = [
     title: "Pokemon",
     description:
       "we love collecting pokemon cards.",
-    tech: ["React", "Chakra UI"],
+    tags: ["React", "Chakra UI"],
     github: "https://github.com/yourusername/palettecraft",
   },
 
@@ -141,7 +141,7 @@ export const miniProjects = [
     title: "bunny",
     description:
       "we are tuji and luobei enthusiasts.",
-    tech: ["React", "Framer Motion"],
+    tags: ["React", "Framer Motion"],
     github: "https://github.com/yourusername/focustimer",
   },
 
@@ -149,7 +149,7 @@ export const miniProjects = [
     title: "gym",
     description:
       "we go gym and be healthy so no sick.",
-    tech: ["React", "Vite"],
+    tags: ["React", "Vite"],
     github: "https://github.com/yourusername/linknest",
   },
 ];
