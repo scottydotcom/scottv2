@@ -148,7 +148,7 @@ const About = () => {
     filter: "brightness(1.15)",
   }}
                 >
-                  <Box fontSize="2xl" color="olive.300">
+                  <Box fontSize="2xl" color="highlight">
                     <item.icon />
                   </Box>
                   <Text fontSize="md">{item.text}</Text>
