@@ -12,6 +12,7 @@ const Sidebar = () => {
 
       <Text color="muted" mt={4}>
         I build accessible, clean, and thoughtful digital experiences.
+        {/* I’m a full‑stack engineer with modern tooling and production‑ready skills. */}
       </Text>
 
       {/* Navigation */}

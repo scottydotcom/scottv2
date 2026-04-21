@@ -1,6 +1,7 @@
 import {
   Box,
   Heading,
+  Flex,
   Tabs,
   TabList,
   TabPanels,
@@ -90,7 +91,7 @@ const ExperienceTabs = () => {
           </TabList>
         </Box>
 
-        <TabPanels pl={6}>
+        <TabPanels pl={6} >
           {experience.map((job, i) => (
             <TabPanel key={i}>
               <Heading size="md" color="subtleText">
@@ -102,9 +103,11 @@ const ExperienceTabs = () => {
               </Text>
 
               {job.bullets.map((b, idx) => (
-                <Text key={idx} mb={2} color="muted">
-                  ▹ {b}
-                </Text>
+              <Flex key={idx} mb={2} align="flex-start" gap={2}>
+                <Text color="accent" mt="2px">▹</Text>
+                {/* <Text color="accent" mt="2px">➥</Text> */}
+                <Text color="muted">{b}</Text>
+              </Flex>
               ))}
             </TabPanel>
           ))}

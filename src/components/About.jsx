@@ -38,7 +38,7 @@ const About = () => {
           Skills I Use
         </Heading>
 
-        <Flex wrap="wrap" gap={2}>
+        <Flex wrap="wrap" gap={2} maxW="500px">
           {skills.map((skill) => (
             <Box
               key={skill}

@@ -9,8 +9,8 @@ const theme = extendTheme({
 
   // ⭐ FONT CONFIG
   fonts: {
-    heading: "Plus Jakarta Sans, sans-serif",
-    body: "Plus Jakarta Sans, sans-serif",
+    heading: "DM Sans Variable, sans-serif",
+    body: "DM Sans Variable, sans-serif",
   },
 
   // ⭐ PREMIUM TYPOGRAPHY SCALE
