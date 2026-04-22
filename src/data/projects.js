@@ -9,7 +9,7 @@ export const projects = [
   },
 
   {
-    title: "quick Chat",
+    title: "Quick Chat",
     imageUrl: "src/assets/img/qc.png",
     description: "A blog that allows you to interact and talk with users in real-time..",
     tags: ["React", "Node.js", "Express", "MongoDB"],

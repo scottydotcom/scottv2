@@ -9,19 +9,19 @@ export const experience = [
     ],
   },
   {
-    company: "Pinterest",
+    company: "LinkedIn",
     role: "Software Engineer",
     date: "2023 – 2025",
     bullets: ["Example bullet point…"],
   },
   {
-    company: "Amazon",
+    company: "CWC",
     role: "Software Engineer",
     date: "2021 – 2023",
     bullets: ["Example bullet point…"],
   },
   {
-    company: "Wattpad",
+    company: "GeneralAssemly",
     role: "Developer",
     date: "2019 – 2021",
     bullets: ["Example bullet point…"],
