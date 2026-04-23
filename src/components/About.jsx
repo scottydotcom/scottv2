@@ -26,8 +26,9 @@ const About = () => {
         About Me
       </Heading>
 
-      <Text color="muted" maxW="600px" lineHeight="1.7" mb={3}>
-I build warm, intentional digital products shaped by clear architecture, cohesive flow, and the small engineering details that make technology feel intuitive, reliable, and quietly elegant.
+      <Text color="muted" maxW="625px" lineHeight="1.7" mb={3}>
+I build warm, intentional digital products shaped by clear architecture, cohesive flow, and the small system‑level details that make technology feel intuitive, reliable, and quietly elegant in everyday use. 
+I care about creating work that feels thoughtful and grounded, where every decision supports a seamless, human‑centered experience.
       </Text>
 
       {/* Skills Section */}
