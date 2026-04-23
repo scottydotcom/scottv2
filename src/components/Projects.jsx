@@ -40,13 +40,13 @@ const Projects = () => {
                 </Heading>
 
                 <Flex gap={3}>
-                  {project.link && (
-                    <Link href={project.link} target="_blank" color="accent">
+                  {project.github && (
+                    <Link href={project.github} target="_blank" color="accent">
                       <FaGithubSquare size={22} />
                     </Link>
                   )}
-                  {project.open && (
-                    <Link href={project.open} target="_blank" color="accent">
+                  {project.live && (
+                    <Link href={project.live} target="_blank" color="accent">
                       <TbBrowserMaximize size={22} />
                     </Link>
                   )}
