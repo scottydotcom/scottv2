@@ -22,19 +22,20 @@ const About = () => {
 
   return (
     <Box id="about">
-      <Heading size="md" mb={4} color="accent" >
+      <Heading size="md" mb={4} color="accent">
         About Me
       </Heading>
 
       <Text color="muted" maxW="625px" lineHeight="1.7" mb={3}>
-I build warm, intentional digital products shaped by clear architecture, cohesive flow, and the small system‑level details that make technology feel intuitive, reliable, and quietly elegant in everyday use. 
-I care about creating work that feels thoughtful and grounded, where every decision supports a seamless, human‑centered experience.
+        I build warm, intentional digital products shaped by clear architecture, cohesive flow, and the small
+        system‑level details that make technology feel intuitive, reliable, and quietly elegant in everyday use. I care
+        about creating work that feels thoughtful and grounded, where every decision supports a seamless, human‑centered
+        experience.
       </Text>
 
       {/* Skills Section */}
       <Box mt={2}>
-        <Heading size="sm" color="highlight" mb={3} letterSpacing="0.5px"
-          fontWeight="600">
+        <Heading size="sm" color="highlight" mb={3} letterSpacing="0.5px" fontWeight="600">
           Skills I Use
         </Heading>
 
@@ -51,8 +52,8 @@ I care about creating work that feels thoughtful and grounded, where every decis
               border="1px solid"
               borderColor="surface"
               _hover={{
-              transform: "scale(1.05)",
-              filter: "brightness(1.15)",
+                transform: "scale(1.05)",
+                filter: "brightness(1.15)",
               }}
             >
               {skill}
@@ -61,27 +62,28 @@ I care about creating work that feels thoughtful and grounded, where every decis
         </Flex>
       </Box>
 
-      <Link onClick={onOpen}
-       color="highlight"
-       cursor="pointer" 
-       display="inline-block" 
-       mt={3}
-       position="relative"
-      _after={{
-      content: '""',
-      position: "absolute",
-      bottom: "-2px",
-      left: "0",
-      width: "0%",                 // start hidden
-      height: "1px",
-      backgroundColor: "highlight",
-      transition: "width 0.25s ease",
-  }}
-  _hover={{
-    _after: {
-      width: "100%",             // animate like sidebar
-    },
-  }}
+      <Link
+        onClick={onOpen}
+        color="highlight"
+        cursor="pointer"
+        display="inline-block"
+        mt={3}
+        position="relative"
+        _after={{
+          content: '""',
+          position: "absolute",
+          bottom: "-2px",
+          left: "0",
+          width: "0%", // start hidden
+          height: "1px",
+          backgroundColor: "highlight",
+          transition: "width 0.25s ease",
+        }}
+        _hover={{
+          _after: {
+            width: "100%", // animate like sidebar
+          },
+        }}
       >
         Read More →
       </Link>
@@ -131,25 +133,24 @@ I care about creating work that feels thoughtful and grounded, where every decis
 
             {/* <Text color="highlight" fontWeight="600" mb={4}>Things I Enjoy</Text> */}
 
-
             {/* ⭐ 3×3 Grid of Hobbies */}
             <SimpleGrid columns={[2, 3]} spacing={6} mb={6}>
               {hobbies.map((item) => (
                 <Flex
                   key={item.text}
-  as="li"
-  align="center"
-  gap={3}
-  mb={3}
-  color="muted"
-  fontSize="md"
-  position="relative"
-  pl="25px"
-  transition="all 0.25s ease"
-  _hover={{
-    transform: "scale(1.03)",
-    filter: "brightness(1.15)",
-  }}
+                  as="li"
+                  align="center"
+                  gap={3}
+                  mb={3}
+                  color="muted"
+                  fontSize="md"
+                  position="relative"
+                  pl="25px"
+                  transition="all 0.25s ease"
+                  _hover={{
+                    transform: "scale(1.03)",
+                    filter: "brightness(1.15)",
+                  }}
                 >
                   <Box fontSize="2xl" color="highlight">
                     <item.icon />
@@ -166,28 +167,3 @@ I care about creating work that feels thoughtful and grounded, where every decis
 };
 
 export default About;
- {/* <Flex
-  as="li"
-  align="center"
-  gap={3}
-  mb={3}
-  color="muted"
-  fontSize="md"
-  position="relative"
-  pl="25px"
-  transition="all 0.25s ease"
-  _hover={{
-    transform: "scale(1.03)",
-    filter: "brightness(1.15)",
-  }}
-></Flex> */}
-
-                  // direction="column"
-                  // align="center"
-                  // justify="center"
-                  // gap={2}
-                  // color="muted"
-                  // transition="all 0.25s ease"
-                  // _hover={{
-                  //   transform: "translateY(-2px)",
-                  // }}
