@@ -1,4 +1,4 @@
-import { Box, Heading, Text, VStack, HStack, Link } from "@chakra-ui/react";
+import { Box, Heading, Text, VStack, HStack, Stack, Link } from "@chakra-ui/react";
 
 const Sidebar = () => {
   return (
@@ -69,12 +69,20 @@ const Sidebar = () => {
         </HStack>
       </Box>
 
-      <Text mt={10} color="muted" fontSize="sm">
+      {/* <Text mt={10} color="muted" fontSize="sm">
         © {new Date().getFullYear()} Your Name. All rights reserved.
-        {/* [Your Name]. All work shown is original and provided for evaluation only.
-        Reuse, copying, or redistribution is not permitted. */}
+      </Text> */}
 
-      </Text>
+      <Stack mt={10} spacing={1} >
+        <Text color="muted" fontSize="sm">
+          Built and designed by me — scottydotcom.  
+        </Text>
+
+        <Text color="muted" fontSize="sm">
+         © {new Date().getFullYear()} All rights reserved.
+        </Text>
+      </Stack>
+
     </Box>
   );
 };
