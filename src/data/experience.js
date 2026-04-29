@@ -15,7 +15,7 @@ export const experience = [
     bullets: ["Example bullet point…"],
   },
   {
-    company: "CWC",
+    company: "Code With Craig",
     role: "Software Engineer",
     date: "2021 – 2023",
     bullets: ["Example bullet point…"],

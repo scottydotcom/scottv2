@@ -58,7 +58,7 @@ const Sidebar = () => {
             GitHub
           </Link>
 
-          <Link href="{import.meta.env.VITE_LINKEDIN_URL}" target="_blank" color="highlight">
+          <Link href={import.meta.env.VITE_LINKEDIN_URL} target="_blank" color="highlight">
             LinkedIn
           </Link>
 
