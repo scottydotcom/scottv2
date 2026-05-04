@@ -83,7 +83,7 @@ const ExperienceTabs = () => {
               <Text color="subtleText" mt={1} mb={4}>
                 {job.date}
               </Text>
-              {job.bullets.map((b, idx) => (
+              {job.jobDescription.map((b, idx) => (
                 <Flex key={idx} mb={2} align="flex-start" gap={2}>
                   <Text color="accent" mt="2px">
                     ▹
