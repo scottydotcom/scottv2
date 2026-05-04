@@ -78,7 +78,7 @@ const ExperienceTabs = () => {
           {experience.map((job, i) => (
             <TabPanel key={i}>
               <Heading size="md" color="subtleText">
-                {job.role} @ {job.company}
+                {job.role} 
               </Heading>
               <Text color="subtleText" mt={1} mb={4}>
                 {job.date}

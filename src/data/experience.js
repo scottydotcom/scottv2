@@ -1,7 +1,7 @@
 export const experience = [
   {
     company: "LinkedIn",
-    role: "Software Engineer",
+    role: "Data Analyst",
     date: "2024 – 2025",
     jobDescription: [
       "Built Git integration into the team’s web‑based IDE, streamlining how developers commit, review, and ship code.",
@@ -12,7 +12,7 @@ export const experience = [
   },
   {
     company: "CodeWithCraig",
-    role: "Software Engineer",
+    role: "Freelance Frontend Developer",
     date: "2024 – 2025",
     jobDescription: [
       "Contributed to building and improving my Bootcamp instructor’s website by creating clear, practical examples in JavaScript, HTML, and CSS.",
@@ -22,7 +22,7 @@ export const experience = [
   },
   {
     company: "GeneralAssembly",
-    role: "Developer",
+    role: "Software Engineering Fellowship",
     date: "2021 – 2021",
     jobDescription: ["Example job description…"],
   },
