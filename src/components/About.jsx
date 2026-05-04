@@ -21,7 +21,7 @@ const About = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box id="about">
+    <Box id="about" mt={7} >
       <Heading size="md" mb={4} color="accent">
         About Me
       </Heading>

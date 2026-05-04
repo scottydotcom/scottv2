@@ -4,8 +4,8 @@ export const projects = [
     imageUrl: "src/assets/img/mnk.png",
     description: "Personal vscode theme designed to enhance coding focus visually.",
     tags: ["React", "Chakra UI", "Firebase", "Framer Motion"],
-    github: "https://github.com/scottydotcom/midnight-koi",
-    live: "https://marketplace.visualstudio.com/items?itemName=scottydotcom.scottydotcom-dark-theme",
+    github: "https://github.com/soraplex/midnight-koi",
+    live: "https://marketplace.visualstudio.com/items?itemName=soraplex.soraplex-midnightkoi",
   },
 
   {
@@ -13,7 +13,7 @@ export const projects = [
     imageUrl: "src/assets/img/qc.png",
     description: "A blog that allows you to interact and talk with users in real-time.",
     tags: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/scottydotcom/quickchat",
+    github: "https://github.com/soraplex/quickchat",
     live: "https://quickchatblog.netlify.app/",
   },
 
@@ -22,7 +22,7 @@ export const projects = [
     imageUrl: "src/assets/img/erlm.png",
     description: "A website that shows users parks & recreation all across America.",
     tags: ["React", "Vite", "Chakra UI", "Zustand"],
-    github: "https://github.com/scottydotcom/earths-realm",
+    github: "https://github.com/soraplex/earths-realm",
     live: "https://earthsrealm.netlify.app/",
   },
   {
@@ -30,7 +30,7 @@ export const projects = [
     imageUrl: "src/assets/img/enso.png",
     description: "Discord bot that sends positive affirmations to users.",
     tags: ["React", "Vite", "Chakra UI", "Zustand"],
-    github: "https://github.com/scottydotcom/Enso",
+    github: "https://github.com/soraplex/Enso",
     live: "",
   },
 ];

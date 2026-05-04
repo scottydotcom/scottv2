@@ -143,7 +143,7 @@ const Sidebar = () => {
       {/* Navigation */}
       <VStack align="start" spacing={2} mt={6}>
         {[
-          { label: "ABOUT", href: "#about" },
+          { label: "ABOUT", href:"#" },
           { label: "EXPERIENCE", href: "#experience" },
           { label: "PROJECTS", href: "#projects" },
           { label: "CASE STUDIES", href: "#case-studies" },
