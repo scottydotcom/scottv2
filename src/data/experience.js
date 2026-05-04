@@ -16,8 +16,8 @@ export const experience = [
     date: "2024 – 2025",
     jobDescription: [
       "Contributed to building and improving my Bootcamp instructor’s website by creating clear, practical examples in JavaScript, HTML, and CSS.",
-      "Worked closely with the instructor to shape a clean, intuitive layout that strengthened navigation and overall user experience.",
-      "Helped redesign and refine the site’s interface to improve accessibility, responsiveness, and visual consistency across pages.",
+      "Worked with the instructor to shape a clean, intuitive layout that strengthened navigation and overall user experience.",
+      "Redesigned key interface elements to improve accessibility, responsiveness, and overall visual polish across the site.",
     ],
   },
   {
