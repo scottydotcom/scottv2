@@ -1,7 +1,7 @@
 export const experience = [
   {
     company: "LinkedIn",
-    role: "Data Analyst",
+    role: "Analytics Engineer - Data Analyst",
     date: "2024 – 2025",
     jobDescription: [
       "Built Git integration into the team’s web‑based IDE, streamlining how developers commit, review, and ship code.",
