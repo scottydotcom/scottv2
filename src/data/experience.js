@@ -24,6 +24,11 @@ export const experience = [
     company: "GeneralAssembly",
     role: "Software Engineering Fellowship",
     date: "2021 – 2021",
-    jobDescription: ["Example job description…"],
+    jobDescription: [
+      "Explained complex code logic clearly, helping peers strengthen technical understanding to improve overall project execution quality.",
+      "Owned development tickets end‑to‑end, applying strong technical judgment and problem‑solving to deliver consistent efficient results.",
+      "Collaborated with instructional staff to refine lab assignments, ensuring precise objectives, accurate solutions, and a streamlined learning goal.",
+      "Built three full‑stack applications demonstrating strong capability across frontend, backend, API integration, and end‑to‑end product execution.",
+    ],
   },
 ];
