@@ -44,7 +44,7 @@ const ExperienceTabs = () => {
             boxShadow="0 0 12px accent"
           />
 
-          <TabList borderRight="1px solid" borderColor="surface" pr={4} minW="190px">
+          <TabList borderRight="1px solid" borderColor="surface" pr={4} minW="190px" minH="300px">
             {experience.map((job, i) => (
               <Tab
                 key={i}

@@ -31,7 +31,7 @@ const About = () => {
         system‑level details that make technology feel intuitive, reliable, and quietly elegant in everyday use. I care
         about creating work that feels thoughtful and grounded, where every decision supports a seamless, human‑centered
         experience. */}
-        I build warm, intentional digital products shaped by clear architecture, cohesive flow, and subtle details that
+        Focusing on creating digital products shaped by clear architecture, cohesive flow, and subtle details that
         make technology feel intuitive, reliable, and seamless.
       </Text>
 
