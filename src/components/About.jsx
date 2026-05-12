@@ -21,18 +21,14 @@ const About = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box id="about" mt={7} >
+    <Box id="about" mt={7}>
       <Heading size="md" mb={4} color="accent">
         About Me
       </Heading>
 
       <Text color="muted" maxW="625px" lineHeight="1.7" mb={3}>
-        {/* I build warm, intentional digital products shaped by clear architecture, cohesive flow, and the small
-        system‑level details that make technology feel intuitive, reliable, and quietly elegant in everyday use. I care
-        about creating work that feels thoughtful and grounded, where every decision supports a seamless, human‑centered
-        experience. */}
-        Focusing on creating digital products shaped by clear architecture, cohesive flow, and subtle details that
-        make technology feel intuitive, reliable, and seamless.
+        Focusing on creating digital products shaped by clear architecture, cohesive flow, and subtle details that make
+        technology feel intuitive, reliable, and seamless.
       </Text>
 
       {/* Skills Section */}
@@ -109,20 +105,13 @@ const About = () => {
 
           <ModalBody>
             <Text color="muted" mb={4}>
-              {/* I’m a frontend engineer who focuses on building clean, accessible, and thoughtful digital experiences. I
-              care deeply about visual harmony, component‑driven architecture, and creating interfaces that feel
-              intuitive and emotionally warm. My work blends modern engineering practices with a strong sense of
-              aesthetic polish. */}
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt velit porro aliquam. Voluptates
-              consequuntur laborum inventore, voluptate nihil voluptas accusamus unde ut aliquid vitae tenetur animi
-              eligendi accusantium non!
+              I care about visual harmony, system‑level thinking, and component‑driven architecture — creating
+              interfaces that feel intuitive, calm, and human-centered. My work blends modern engineering with a
+              strong sense of aesthetic clarity and polish.
             </Text>
 
             <Text color="muted" mb={4}>
-              {/* {/* I enjoy working with React, Chakra UI, Vite, and design systems. I’m passionate about workflow */}
-              {/* optimization, theme design, and crafting digital environments that feel premium and intentional. */}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad optio fugiat, mollitia qui quod laboriosam
-              nulla temporibus cumque fuga. Magni incidunt nemo quae, odio velit doloremque ullam ratione ducimus aut.
+              I enjoy working with React, Chakra UI, JavaScript, and design systems, focusing on workflow optimization, theme development, AI-assisted tooling, and delivering products that feel premium, intentional, and thoughtfully curated from system foundation to final interaction.
             </Text>
 
             <Text color="muted" mb={4}>
