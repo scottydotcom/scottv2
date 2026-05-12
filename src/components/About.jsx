@@ -100,7 +100,7 @@ const About = () => {
             md: "translateX(-380px)",
           }}
         >
-          <ModalHeader color="subtleText">About Me</ModalHeader>
+          <ModalHeader color="accent">About Me</ModalHeader>
           <ModalCloseButton />
 
           <ModalBody>
