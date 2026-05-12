@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Midnight Koi",
-    imageUrl: "src/assets/img/mnk.png",
+    imageUrl: "src/assets/imgs/mnk.png",
     description: "Personal vscode theme designed to enhance coding focus visually.",
     tags: ["Node.js", "JSON", "Yeoman",],
     github: "https://github.com/soraplex/midnight-koi",
@@ -10,7 +10,7 @@ export const projects = [
 
   {
     title: "Quick Chat",
-    imageUrl: "src/assets/img/qc.png",
+    imageUrl: "src/assets/imgs/qc.png",
     description: "A blog that allows you to interact and talk with users in real-time.",
     tags: ["JavaScript", "MicroblogLite API", "Node.js", "HTML", "CSS"],
     github: "https://github.com/soraplex/quickchat",
@@ -19,7 +19,7 @@ export const projects = [
 
   {
     title: "Earths Realm",
-    imageUrl: "src/assets/img/erlm.png",
+    imageUrl: "src/assets/imgs/erlm.png",
     description: "A website that shows users parks & recreation all across America.",
     tags: ["JavaScript","Sunrise API", "HTML", "CSS",],
     github: "https://github.com/soraplex/earths-realm",
@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     title: "Enso",
-    imageUrl: "src/assets/img/enso.png",
+    imageUrl: "src/assets/imgs/enso.png",
     description: "Discord bot that sends positive affirmations to users.",
     tags: ["Discord.js", "JavaScript", "Node.js","Discord API", "AWS"],
     github: "https://github.com/soraplex/Enso",
