@@ -21,13 +21,16 @@ const CaseStudies = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const caseStudy = {
+    isOpen,
+    onClose,
+    currentStudy: caseStudies[currentIndex],
+    handleNext: () => setCurrentIndex((prev) => (prev + 1 < caseStudies.length ? prev + 1 : 0)),
+  };
+
   const openModal = (index) => {
     setCurrentIndex(index);
     onOpen();
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev + 1 < caseStudies.length ? prev + 1 : 0));
   };
 
   return (
@@ -88,16 +91,16 @@ const CaseStudies = () => {
         ))}
       </Flex>
       {/* Modal */}
-      <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
+      <Modal {...caseStudy } size="xl" isCentered>
         <ModalOverlay />
         <ModalContent bg="bg" color="subtleText" border="1px solid" borderColor="surface">
-          <ModalHeader>{caseStudies[currentIndex].title}</ModalHeader>
+          <ModalHeader>{caseStudy.currentStudy.title}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Text color="muted" mb={4}>
-              {caseStudies[currentIndex].fullText}
+              {caseStudy.currentStudy.fullText}
             </Text>
-            <Button onClick={handleNext} bg="olive.700" color="olive.100" _hover={{ bg: "olive.600" }} mt={4}>
+            <Button onClick={caseStudy .handleNext} bg="olive.700" color="olive.100" _hover={{ bg: "olive.600" }} mt={4}>
               Next Case Study →
             </Button>
           </ModalBody>
