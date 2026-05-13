@@ -89,7 +89,6 @@ const About = () => {
       {/* Modal */}
       <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
         <ModalOverlay />
-
         <ModalContent
           bg="bg"
           color="text"
@@ -102,18 +101,17 @@ const About = () => {
         >
           <ModalHeader color="accent">About Me</ModalHeader>
           <ModalCloseButton />
-
           <ModalBody>
             <Text color="muted" mb={4}>
               I care about visual harmony, system‑level thinking, and component‑driven architecture — creating
-              interfaces that feel intuitive, calm, and human-centered. My work blends modern engineering with a
-              strong sense of aesthetic clarity and polish.
+              interfaces that feel intuitive, calm, and human-centered. My work blends modern engineering with a strong
+              sense of aesthetic clarity and polish.
             </Text>
-
             <Text color="muted" mb={4}>
-              I enjoy working with React, Chakra UI, JavaScript, and design systems, focusing on workflow optimization, theme development, AI-assisted tooling, and delivering products that feel premium, intentional, and thoughtfully curated from system foundation to final interaction.
+              I enjoy working with React, Chakra UI, JavaScript, and design systems, focusing on workflow optimization,
+              theme development, AI-assisted tooling, and delivering products that feel premium, intentional, and
+              thoughtfully curated from system foundation to final interaction.
             </Text>
-
             <Text color="muted" mb={4}>
               {/* Outside of coding, I love exploring color palettes, customizing digital tools, and building small creative
               projects that help me refine my craft. */}
@@ -121,8 +119,6 @@ const About = () => {
             <Text color="muted" mb={6}>
               Outside of coding, these are my hobbies keep me balanced
             </Text>
-
-            {/* <Text color="highlight" fontWeight="600" mb={4}>Things I Enjoy</Text> */}
 
             {/* ⭐ 3×3 Grid of Hobbies */}
             <SimpleGrid columns={[2, 3]} spacing={6} mb={6}>
@@ -158,5 +154,3 @@ const About = () => {
 };
 
 export default About;
-
-

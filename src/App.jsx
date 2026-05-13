@@ -17,7 +17,6 @@ const App = () => {
       <Box position="sticky" top="4rem" h="fit-content">
         <Sidebar />
       </Box>
-
       <Box display="flex" flexDirection="column" gap={12}>
         <About />
         <Experiences />

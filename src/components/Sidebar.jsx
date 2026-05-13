@@ -93,8 +93,7 @@ const Sidebar = () => {
       </Text>
 
       <Text color="muted" mt={4}>
-        I build scalable, intuitive experiences across engineering, AI, and design.
-        {/* I create warm, intuitive products where engineering, AI, and design unify seamlessly.   */}
+        I create intuitive products unifying engineering, AI, and design seamlessly.  
       </Text>
 
       {/* Navigation */}
@@ -259,9 +258,9 @@ const Sidebar = () => {
       </Modal>
 
       {/* footer */}
-      <Stack mt={10} spacing={1}>
+      <Stack mt={720} spacing={1}>
         <Text color="muted" fontSize="sm">
-          Built and designed by me — scottydotcom.
+          Built and designed by me — soraplex.
         </Text>
         <Text color="muted" fontSize="sm">
           © {new Date().getFullYear()} All rights reserved.

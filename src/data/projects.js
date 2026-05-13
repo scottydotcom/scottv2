@@ -3,7 +3,7 @@ export const projects = [
     title: "Midnight Koi",
     imageUrl: "src/assets/imgs/mnk.png",
     description: "Personal vscode theme designed to enhance coding focus visually.",
-    tags: ["Node.js", "JSON", "Yeoman",],
+    tags: ["Node.js", "JSON", "Yeoman"],
     github: "https://github.com/soraplex/midnight-koi",
     live: "https://marketplace.visualstudio.com/items?itemName=soraplex.soraplex-midnightkoi",
   },
@@ -21,7 +21,7 @@ export const projects = [
     title: "Earths Realm",
     imageUrl: "src/assets/imgs/erlm.png",
     description: "A website that shows users parks & recreation all across America.",
-    tags: ["JavaScript","Sunrise API", "HTML", "CSS",],
+    tags: ["JavaScript", "Sunrise API", "HTML", "CSS"],
     github: "https://github.com/soraplex/earths-realm",
     live: "https://earthsrealm.netlify.app/",
   },
@@ -29,34 +29,30 @@ export const projects = [
     title: "Enso",
     imageUrl: "src/assets/imgs/enso.png",
     description: "Discord bot that sends positive affirmations to users.",
-    tags: ["Discord.js", "JavaScript", "Node.js","Discord API", "AWS"],
+    tags: ["Discord.js", "JavaScript", "Node.js", "Discord API", "AWS"],
     github: "https://github.com/soraplex/Enso",
     live: "",
   },
 ];
 
-
 export const miniProjects = [
   {
     title: "Place Holder 1",
-    description:
-      "Simple portfolio site built with React, Chakra UI, and Vite.",
+    description: "Simple portfolio site built with React, Chakra UI, and Vite.",
     tags: ["React", "Chakra UI"],
     github: "https://github.com/yourusername/palettecraft",
   },
 
   {
     title: "Place Holder 2",
-    description:
-      "Compact React tool using Chakra UI for task streamlining.",
+    description: "Compact React tool using Chakra UI for task streamlining.",
     tags: ["React", "Framer Motion"],
     github: "https://github.com/yourusername/focustimer",
   },
 
   {
     title: "Place Holder 3",
-    description:
-      "Experimental web app exploring animations with JavaScript frameworks.",
+    description: "Experimental web app exploring animations with JavaScript frameworks.",
     tags: ["React", "Vite"],
     github: "https://github.com/yourusername/linknest",
   },

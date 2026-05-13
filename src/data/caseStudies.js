@@ -30,7 +30,9 @@ export const caseStudies = [
     tags: ["User Flows", "Interaction Design", "Prototyping"],
     link: "/case-studies/onboarding",
     fullText: `
-      This case study explores the challenges and solutions involved in improving the onboarding experience for a new user. Through user research, journey mapping, and iterative design, we were able to create a more intuitive and engaging onboarding process...
+      This case study explores the challenges and solutions involved in improving the onboarding experience 
+      for a new user. Through user research, journey mapping, and iterative design, we were able to create 
+      a more intuitive and engaging onboarding process...
     `,
   },
 ];
