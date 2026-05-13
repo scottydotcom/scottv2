@@ -93,7 +93,7 @@ const Sidebar = () => {
       </Text>
 
       <Text color="muted" mt={4}>
-        I create intuitive products unifying engineering, AI, and design seamlessly.  
+        I create intuitive products unifying engineering, AI, and design seamlessly.
       </Text>
 
       {/* Navigation */}

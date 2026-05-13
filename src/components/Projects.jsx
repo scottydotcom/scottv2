@@ -32,13 +32,11 @@ const Projects = () => {
             }}
           >
             <Image src={project.imageUrl} alt={project.title} w="120px" h="90px" objectFit="cover" borderRadius="md" />
-
             <Box flex="1">
               <Flex justify="space-between" align="center">
                 <Heading size="md" color="subtleText">
                   {project.title}
                 </Heading>
-
                 <Flex gap={3}>
                   {project.github && (
                     <Link href={project.github} target="_blank" color="accent">
@@ -52,11 +50,9 @@ const Projects = () => {
                   )}
                 </Flex>
               </Flex>
-
               <Text color="muted" mt={2}>
                 {project.description}
               </Text>
-
               <Flex gap={2} mt={3} wrap="wrap">
                 {project.tags.map((tag, idx) => (
                   <Tag key={idx} bg="olive.700" color="olive.100">
@@ -68,12 +64,10 @@ const Projects = () => {
           </Flex>
         ))}
       </Flex>
-
       {/* MINI PROJECTS — SAME STYLING, 3-COLUMN GRID */}
       {/* <Heading size="sm" mb={4} color="accent">
         Smaller Projects
       </Heading> */}
-
       {/* <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
         {miniProjects.map((project, i) => (
           <Flex
@@ -93,8 +87,6 @@ const Projects = () => {
               bg: "rgba(255,255,255,0.05)",
             }}
           >
-            
-
             <Box flex="1">
               <Flex justify="space-between" align="center">
                 <Heading size="sm" color="subtleText">
@@ -114,11 +106,9 @@ const Projects = () => {
                   )}
                 </Flex>
               </Flex>
-
               <Text color="muted" mt={2}>
                 {project.description}
               </Text>
-
               <Flex gap={2} mt={3} wrap="wrap">
                 {project.tags.map((tag, idx) => (
                   <Tag key={idx} bg="olive.700" color="olive.100">

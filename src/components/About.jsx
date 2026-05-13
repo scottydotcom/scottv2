@@ -25,18 +25,15 @@ const About = () => {
       <Heading size="md" mb={4} color="accent">
         About Me
       </Heading>
-
       <Text color="muted" maxW="625px" lineHeight="1.7" mb={3}>
         Focusing on creating digital products shaped by clear architecture, cohesive flow, and subtle details that make
         technology feel intuitive, reliable, and seamless.
       </Text>
-
       {/* Skills Section */}
       <Box mt={2}>
         <Heading size="sm" color="highlight" mb={3} letterSpacing="0.5px" fontWeight="600">
           Skills I Use
         </Heading>
-
         <Flex wrap="wrap" gap={2} maxW="500px">
           {skills.map((skill) => (
             <Box
@@ -59,7 +56,6 @@ const About = () => {
           ))}
         </Flex>
       </Box>
-
       <Link
         onClick={onOpen}
         color="highlight"
@@ -85,7 +81,6 @@ const About = () => {
       >
         Read More →
       </Link>
-
       {/* Modal */}
       <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
         <ModalOverlay />
@@ -119,7 +114,6 @@ const About = () => {
             <Text color="muted" mb={6}>
               Outside of coding, these are my hobbies keep me balanced
             </Text>
-
             {/* ⭐ 3×3 Grid of Hobbies */}
             <SimpleGrid columns={[2, 3]} spacing={6} mb={6}>
               {hobbies.map((item) => (

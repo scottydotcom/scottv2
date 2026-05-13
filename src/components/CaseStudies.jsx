@@ -35,7 +35,6 @@ const CaseStudies = () => {
       <Heading size="md" mb={6} color="accent">
         Case Studies
       </Heading>
-
       <Flex direction="column" gap={6}>
         {caseStudies.map((study, i) => (
           <Box
@@ -50,11 +49,9 @@ const CaseStudies = () => {
             <Heading size="md" color="subtleText">
               {study.title}
             </Heading>
-
             <Text color="muted" mt={2} mb={4}>
               {study.summary}
             </Text>
-
             <Flex gap={2} wrap="wrap">
               {study.tags.map((tag, idx) => (
                 <Tag key={idx} bg="olive.700" color="olive.100">
@@ -62,7 +59,6 @@ const CaseStudies = () => {
                 </Tag>
               ))}
             </Flex>
-
             <Link
               onClick={() => openModal(i)}
               color="accent"
@@ -91,20 +87,16 @@ const CaseStudies = () => {
           </Box>
         ))}
       </Flex>
-
       {/* Modal */}
       <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
         <ModalOverlay />
-
         <ModalContent bg="bg" color="subtleText" border="1px solid" borderColor="surface">
           <ModalHeader>{caseStudies[currentIndex].title}</ModalHeader>
           <ModalCloseButton />
-
           <ModalBody>
             <Text color="muted" mb={4}>
               {caseStudies[currentIndex].fullText}
             </Text>
-
             <Button onClick={handleNext} bg="olive.700" color="olive.100" _hover={{ bg: "olive.600" }} mt={4}>
               Next Case Study →
             </Button>

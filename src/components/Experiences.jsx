@@ -7,7 +7,6 @@ const ExperienceTabs = () => {
       <Heading size="md" mb={6} color="accent">
         Experience
       </Heading>
-
       <Tabs variant="enclosed">
         <TabList>
           {experience.map((job, i) => (
@@ -25,18 +24,15 @@ const ExperienceTabs = () => {
             </Tab>
           ))}
         </TabList>
-
         <TabPanels>
           {experience.map((job, i) => (
             <TabPanel key={i}>
               <Heading size="md" color="subtleText">
                 {job.role}
               </Heading>
-
               <Text color="subtleText" mt={1} mb={4}>
                 {job.date}
               </Text>
-
               {job.jobDescription.map((b, idx) => (
                 <Flex key={idx} mb={2} align="flex-start" gap={2}>
                   <Text color="accent" mt="2px">
