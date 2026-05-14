@@ -20,6 +20,12 @@ import { hobbies } from "../data/hobbies";
 const About = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const aboutModal = { 
+    isOpen, 
+    onOpen, 
+    onClose 
+  };
+
   return (
     <Box id="about" mt={7}>
       <Heading size="md" mb={4} color="accent">
@@ -29,6 +35,7 @@ const About = () => {
         Focusing on creating digital products shaped by clear architecture, cohesive flow, and subtle details that make
         technology feel intuitive, reliable, and seamless.
       </Text>
+      
       {/* Skills Section */}
       <Box mt={2}>
         <Heading size="sm" color="highlight" mb={3} letterSpacing="0.5px" fontWeight="600">
@@ -56,8 +63,9 @@ const About = () => {
           ))}
         </Flex>
       </Box>
+      
       <Link
-        onClick={onOpen}
+        onClick={aboutModal.onOpen} 
         color="highlight"
         cursor="pointer"
         display="inline-block"
@@ -68,21 +76,21 @@ const About = () => {
           position: "absolute",
           bottom: "-2px",
           left: "0",
-          width: "0%", // start hidden
+          width: "0%",
           height: "1px",
           backgroundColor: "highlight",
           transition: "width 0.25s ease",
         }}
         _hover={{
           _after: {
-            width: "100%", // animate like sidebar
+            width: "100%",
           },
         }}
       >
         Read More →
       </Link>
-      {/* Modal */}
-      <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
+
+      <Modal {...aboutModal} size="xl" isCentered>
         <ModalOverlay />
         <ModalContent
           bg="bg"
@@ -107,14 +115,9 @@ const About = () => {
               theme development, AI-assisted tooling, and delivering products that feel premium, intentional, and
               thoughtfully curated from system foundation to final interaction.
             </Text>
-            <Text color="muted" mb={4}>
-              {/* Outside of coding, I love exploring color palettes, customizing digital tools, and building small creative
-              projects that help me refine my craft. */}
-            </Text>
             <Text color="muted" mb={6}>
               Outside of coding, these are my hobbies keep me balanced
             </Text>
-            {/* ⭐ 3×3 Grid of Hobbies */}
             <SimpleGrid columns={[2, 3]} spacing={6} mb={6}>
               {hobbies.map((item) => (
                 <Flex
