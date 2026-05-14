@@ -90,6 +90,7 @@ const CaseStudies = () => {
           </Box>
         ))}
       </Flex>
+      
       {/* Modal */}
       <Modal {...caseStudy } size="xl" isCentered>
         <ModalOverlay />

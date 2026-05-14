@@ -1,6 +1,6 @@
 import { Box, Heading, Text, VStack, HStack, Stack, Link, useDisclosure } from "@chakra-ui/react";
-import { useContact } from "./contact/useContact"; // 🎣 Hook
-import ContactForm from "./contact/ContactForm.jsx"; // 🖼️ Component
+import { useContact } from "./contact/useContact";
+import ContactForm from "./contact/ContactForm.jsx";
 
 const Sidebar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -72,7 +72,6 @@ const Sidebar = () => {
         </HStack>
       </Box>
 
-      {/* 🎉 ONE LINE! All logic/UI extracted */}
       <ContactForm {...contact} isOpen={isOpen} onClose={onClose} />
 
       {/* Footer */}
