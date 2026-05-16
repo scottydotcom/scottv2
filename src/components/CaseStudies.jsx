@@ -38,6 +38,7 @@ const CaseStudies = () => {
       <Heading size="md" mb={6} color="accent">
         Case Studies
       </Heading>
+
       <Flex direction="column" gap={6}>
         {caseStudies.map((study, i) => (
           <Box
@@ -46,15 +47,22 @@ const CaseStudies = () => {
             borderRadius="lg"
             borderBottom="1px solid"
             borderColor="surface"
-            transition="0.2s ease"
-            _hover={{ bg: "surface", transform: "scale(1.03)", bg: "rgba(255,255,255,0.05)" }}
+            transition="0.35s ease"
+            // bg="surface"
+            _hover={{
+              transform: { base: "translateY(-2px)", md: "scale(1.03)" },
+              backdropFilter: "blur(18px) brightness(1.1)",
+              bg: "rgba(255,255,255,0.05)",
+            }}
           >
             <Heading size="md" color="subtleText">
               {study.title}
             </Heading>
+
             <Text color="muted" mt={2} mb={4}>
               {study.summary}
             </Text>
+
             <Flex gap={2} wrap="wrap">
               {study.tags.map((tag, idx) => (
                 <Tag key={idx} bg="olive.700" color="olive.100">
@@ -62,27 +70,26 @@ const CaseStudies = () => {
                 </Tag>
               ))}
             </Flex>
+
             <Link
               onClick={() => openModal(i)}
               color="accent"
               mt={4}
               display="inline-block"
               cursor="pointer"
-              position="relative" // REQUIRED
+              position="relative"
               _after={{
                 content: '""',
                 position: "absolute",
                 bottom: "-2px",
                 left: "0",
-                width: "0%", // start hidden
+                width: "0%",
                 height: "1px",
                 backgroundColor: "highlight",
-                transition: "width 0.25s ease", // animate width
+                transition: "width 0.25s ease",
               }}
               _hover={{
-                _after: {
-                  width: "100%", // animate like sidebar
-                },
+                _after: { width: "100%" },
               }}
             >
               Read Case Study →
@@ -90,18 +97,20 @@ const CaseStudies = () => {
           </Box>
         ))}
       </Flex>
-      
+
       {/* Modal */}
-      <Modal {...caseStudy } size="xl" isCentered>
+      <Modal {...caseStudy} size="xl" isCentered>
         <ModalOverlay />
         <ModalContent bg="bg" color="subtleText" border="1px solid" borderColor="surface">
           <ModalHeader>{caseStudy.currentStudy.title}</ModalHeader>
           <ModalCloseButton />
+
           <ModalBody>
             <Text color="muted" mb={4}>
               {caseStudy.currentStudy.fullText}
             </Text>
-            <Button onClick={caseStudy .handleNext} bg="olive.700" color="olive.100" _hover={{ bg: "olive.600" }} mt={4}>
+
+            <Button onClick={caseStudy.handleNext} bg="olive.700" color="olive.100" _hover={{ bg: "olive.600" }} mt={4} mb={4}>
               Next Case Study →
             </Button>
           </ModalBody>
