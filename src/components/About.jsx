@@ -115,6 +115,16 @@ const About = () => {
               theme development, AI-assisted tooling, and delivering products that feel premium, intentional, and
               thoughtfully curated from system foundation to final interaction.
             </Text>
+
+            {/* 
+            
+            I create intuitive, human-centered interfaces through visual harmony, system-level thinking, and component-driven architecture.
+
+            Blending modern engineering (React, Chakra UI, JS, design systems) with aesthetic clarity, I focus on workflow optimization, AI tooling, and premium, intentional products from foundation to finish.
+            
+            "Building intuitive, human-centered interfaces with React/Chakra UI through system architecture, AI tooling, and premium design from foundation to finish."
+            */}
+
             <Text color="muted" mb={6}>
               Outside of coding, these are my hobbies keep me balanced
             </Text>
