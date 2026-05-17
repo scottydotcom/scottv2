@@ -181,18 +181,34 @@ const Projects = () => {
                 <Heading size={{ base: "sm", md: "md" }} color="subtleText">
                   {project.title}
                 </Heading>
-                <Flex gap={{ base: 2, md: 3 }}>
-                  {project.github && (
-                    <Link href={project.github} target="_blank" color="accent">
-                      <FaGithubSquare size={{ base: 20, md: 22 }} />
-                    </Link>
-                  )}
-                  {project.live && (
-                    <Link href={project.live} target="_blank" color="accent">
-                      <TbBrowserMaximize size={{ base: 20, md: 22 }} />
-                    </Link>
-                  )}
-                </Flex>
+<Flex gap={{ base: 2, md: 3 }}>
+  {project.github && (
+    <Link
+      href={project.github}
+      target="_blank"
+      color="accent"
+      title="View GitHub Repo"
+    >
+      <Box fontSize={{ base: "20px", md: "22px" }}>
+        <FaGithubSquare />
+      </Box>
+    </Link>
+  )}
+
+  {project.live && (
+    <Link
+      href={project.live}
+      target="_blank"
+      color="accent"
+      title="View Live Demo"
+    >
+      <Box fontSize={{ base: "20px", md: "22px" }}>
+        <TbBrowserMaximize />
+      </Box>
+    </Link>
+  )}
+</Flex>
+
               </Flex>
               <Text color="muted" mt={2}>
                 {project.description}

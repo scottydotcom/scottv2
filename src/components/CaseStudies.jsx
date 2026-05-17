@@ -96,12 +96,14 @@ const CaseStudies = () => {
             </Link>
           </Box>
         ))}
+
+        
       </Flex>
 
       {/* Modal */}
       <Modal {...caseStudy} size="xl" isCentered>
         <ModalOverlay />
-        <ModalContent bg="bg" color="subtleText" border="1px solid" borderColor="surface">
+        <ModalContent  bg="bg" color="subtleText" border="1px solid" borderColor="surface">
           <ModalHeader>{caseStudy.currentStudy.title}</ModalHeader>
           <ModalCloseButton />
 
