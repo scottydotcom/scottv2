@@ -1,6 +1,6 @@
 import { Box, Text, HStack, Link, useDisclosure } from "@chakra-ui/react";
-import { useContact } from "./contact/useContact";
-import ContactForm from "./contact/ContactForm.jsx";
+import { useContact } from "./contactModal/useContact";
+import ContactForm from "./contactModal/ContactForm";
 
 const SidebarContact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
