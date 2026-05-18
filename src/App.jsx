@@ -13,14 +13,14 @@ const App = () => {
   return (
     <Box>
       {/* MOBILE MENU */}
-      <Box display={{ base: "block", md: "none" }} px={6} mb={6}>
+      <Box display={{ base: "block", md: "none" }} px={4} mb={6}>
         <MobileMenu />
       </Box>
 
       <Grid templateColumns={["1fr", "300px 1fr"]} gap={10} maxW="1200px" mx="auto" p={10}>
         {/* SIDEBAR — hidden on mobile */}
         <Box
-          display={{ base: "none", md: "block" }}
+          display={{ base: "block", md: "block" }}
           position={{ base: "static", md: "sticky" }}
           top={{ base: "0", md: "4rem" }}
           h="fit-content"

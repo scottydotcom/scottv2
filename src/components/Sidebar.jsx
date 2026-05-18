@@ -17,7 +17,7 @@ const Sidebar = () => {
         Full Stack · AI · UI/UX Designer
       </Text>
 
-      <Text color="muted" mt={4}>
+      <Text color="muted" mt={4} maxW = {{base: "80%", md: "none"}}>
         I create intuitive products unifying engineering, AI, and design seamlessly.
       </Text>
 
@@ -75,7 +75,7 @@ const Sidebar = () => {
       </Box>
 
       {/* Footer */}
-      <Stack mt={720} spacing={1}>
+      <Stack mt={4} spacing={1}>
         <Text color="muted" fontSize="sm">
           Built and designed by me — soraplex.
         </Text>
