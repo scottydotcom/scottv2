@@ -25,16 +25,8 @@ const MobileMenu = () => {
 
   return (
     <Box display={{ base: "block", md: "none" }}>
-      {/* Hamburger Icon */}
-      <IconButton
-        icon={<HamburgerIcon />}
-        onClick={onOpen}
-        variant="ghost"
-        color="accent"
-        fontSize="24px"
-      />
+      <IconButton icon={<HamburgerIcon />} onClick={onOpen} variant="ghost" color="accent" fontSize="24px" />
 
-      {/* Drawer */}
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent bg="bg" color="text">
@@ -44,13 +36,7 @@ const MobileMenu = () => {
           <DrawerBody>
             <VStack align="start" spacing={4} mt={4}>
               {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  color="highlight"
-                  fontSize="lg"
-                  onClick={onClose}
-                >
+                <Link key={item.href} href={item.href} color="highlight" fontSize="lg" onClick={onClose}>
                   {item.label}
                 </Link>
               ))}

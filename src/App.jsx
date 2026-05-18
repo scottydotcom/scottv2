@@ -1,27 +1,29 @@
 import { Grid, Box } from "@chakra-ui/react";
+
 import Sidebar from "./components/Sidebar";
+import Hero from "./components/Hero";
+import MobileMenu from "./components/MobileMenu";
+
 import About from "./components/About";
 import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";
 import CaseStudies from "./components/CaseStudies";
-import MobileMenu from "./components/MobileMenu";
 
 const App = () => {
   return (
-    <>
-      {/* MOBILE BURGER MENU */}
-      <Box display={{ base: "block", md: "none" }} p={4}>
+    <box>
+      {/* MOBILE MENU */}
+      <Box display={{ base: "block", md: "none" }} px={6} mb={6}>
         <MobileMenu />
       </Box>
 
-      <Grid
-        templateColumns={["1fr", "300px 1fr"]}
-        gap={10}
-        maxW="1200px"
-        mx="auto"
-        p={10}
-      >
-        {/* SIDEBAR — hidden on mobile, visible on desktop */}
+      {/* MOBILE HERO */}
+      <Box display={{ base: "block", md: "none" }} px={6} mb={6}>
+        <Hero />
+      </Box>
+
+      <Grid templateColumns={["1fr", "300px 1fr"]} gap={10} maxW="1200px" mx="auto" p={10}>
+        {/* SIDEBAR — hidden on mobile */}
         <Box
           display={{ base: "none", md: "block" }}
           position={{ base: "static", md: "sticky" }}
@@ -31,6 +33,7 @@ const App = () => {
           <Sidebar />
         </Box>
 
+        {/* MAIN CONTENT */}
         <Box display="flex" flexDirection="column" gap={12}>
           <About />
           <Experiences />
@@ -38,7 +41,7 @@ const App = () => {
           <CaseStudies />
         </Box>
       </Grid>
-    </>
+    </box>
   );
 };
 

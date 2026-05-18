@@ -2,7 +2,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 
 const Hero = () => {
   return (
-    <Box>
+    <Box px={{ base: 4, md: 0 }} pt={{ base: 2, md: 0 }}>
       <Heading size="xl" color="textSubtle">
         Scott
       </Heading>
