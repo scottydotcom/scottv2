@@ -1,7 +1,7 @@
 import { Grid, Box } from "@chakra-ui/react";
 
 import Sidebar from "./components/Sidebar";
-import Hero from "./components/Hero";
+import Hero from "./components/sidebar/Hero";
 import MobileMenu from "./components/MobileMenu";
 
 import About from "./components/About";
