@@ -103,7 +103,7 @@ const CaseStudies = () => {
       {/* Modal */}
       <Modal {...caseStudy} size="xl" isCentered>
         <ModalOverlay />
-        <ModalContent  bg="bg" color="subtleText" border="1px solid" borderColor="surface">
+        <ModalContent  maxW={{ base: "90%", md: "xl" }}  bg="bg" color="subtleText" border="1px solid" borderColor="surface">
           <ModalHeader>{caseStudy.currentStudy.title}</ModalHeader>
           <ModalCloseButton />
 

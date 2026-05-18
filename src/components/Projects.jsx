@@ -126,7 +126,6 @@
 
 // export default Projects;
 
-
 import { Box, Heading, Flex, Text, Image, Tag, Link, SimpleGrid } from "@chakra-ui/react";
 import { FaGithubSquare } from "react-icons/fa";
 import { TbBrowserMaximize } from "react-icons/tb";
@@ -161,18 +160,18 @@ const Projects = () => {
             }}
             flexDirection={{ base: "column", md: "row" }}
           >
-            <Image 
-              src={project.imageUrl} 
-              alt={project.title} 
-              w={{ base: "100%", md: "120px" }} 
+            <Image
+              src={project.imageUrl}
+              alt={project.title}
+              w={{ base: "100%", md: "120px" }}
               h={{ base: "140px", md: "90px" }}
-              objectFit="cover" 
+              objectFit="cover"
               borderRadius="md"
               mb={{ base: 3, md: 0 }}
             />
             <Box flex="1">
-              <Flex 
-                justify="space-between" 
+              <Flex
+                justify="space-between"
                 align="center"
                 flexDirection={{ base: "column", md: "row" }}
                 gap={{ base: 2, md: 0 }}
@@ -181,34 +180,23 @@ const Projects = () => {
                 <Heading size={{ base: "sm", md: "md" }} color="subtleText">
                   {project.title}
                 </Heading>
-<Flex gap={{ base: 2, md: 3 }}>
-  {project.github && (
-    <Link
-      href={project.github}
-      target="_blank"
-      color="accent"
-      title="View GitHub Repo"
-    >
-      <Box fontSize={{ base: "20px", md: "22px" }}>
-        <FaGithubSquare />
-      </Box>
-    </Link>
-  )}
+                <Flex gap={{ base: 2, md: 3 }}>
+                  {project.github && (
+                    <Link href={project.github} target="_blank" color="accent" title="View GitHub Repo">
+                      <Box fontSize={{ base: "20px", md: "22px" }}>
+                        <FaGithubSquare />
+                      </Box>
+                    </Link>
+                  )}
 
-  {project.live && (
-    <Link
-      href={project.live}
-      target="_blank"
-      color="accent"
-      title="View Live Demo"
-    >
-      <Box fontSize={{ base: "20px", md: "22px" }}>
-        <TbBrowserMaximize />
-      </Box>
-    </Link>
-  )}
-</Flex>
-
+                  {project.live && (
+                    <Link href={project.live} target="_blank" color="accent" title="View Live Demo">
+                      <Box fontSize={{ base: "20px", md: "22px" }}>
+                        <TbBrowserMaximize />
+                      </Box>
+                    </Link>
+                  )}
+                </Flex>
               </Flex>
               <Text color="muted" mt={2}>
                 {project.description}
