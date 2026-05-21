@@ -8,12 +8,29 @@ const ExperienceTabs = () => {
         Experience
       </Heading>
       <Tabs variant="enclosed">
+        {/* <TabList>
+          {experience.map((job, i) => (
+            <Tab
+              key={i}
+              fontWeight="500"
+              color="muted"
+              _selected={{
+                color: "highlight",
+                bg: "surface",
+                borderColor: "accent",
+              }}
+            >
+              {job.company}
+            </Tab>
+          ))}
+        </TabList> */}
         <TabList>
           {experience.map((job, i) => (
             <Tab
               key={i}
               fontWeight="500"
               color="muted"
+              fontSize={{ base: "sm", md: "md" }} // smaller text on mobile
               _selected={{
                 color: "highlight",
                 bg: "surface",
