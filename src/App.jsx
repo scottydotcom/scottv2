@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     // Use Flex to force the container to full height so the footer can stick to bottom
-    <Flex direction={isMobile ? "column" : "row"} minH="100vh" maxW="1200px" mx="auto" p={isMobile ? 4 : 10} gap={10}>
+    <Flex direction={isMobile ? "column" : "row"} maxW="1200px" mx="auto" p={isMobile ? 4 : 10} gap={10}>
       {/* Sidebar Column */}
       {/* On mobile, this is just a static block at the top, not sticky */}
       <Box w={isMobile ? "100%" : "300px"} flexShrink={0}>

@@ -19,7 +19,13 @@ const ContactModal = ({ isOpen, onClose, formData, handleChange, handleSubmit, i
   return (
     <Modal isOpen={isOpen} onClose={onClose} isCentered size="lg">
       <ModalOverlay />
-      <ModalContent bg="bg" color="text" border="1px solid" borderColor="muted">
+      <ModalContent
+        bg="bg"
+        color="text"
+        border="1px solid"
+        borderColor="muted"
+        maxW={{ base: "90%", md: "var(--chakra-sizes-lg)" }}
+      >
         <ModalHeader color="text">Send Me a Message</ModalHeader>
         <ModalCloseButton color="muted" />
 

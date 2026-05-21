@@ -199,7 +199,7 @@ const Sidebar = () => {
 
   return (
     <Box
-      mt={isMobile ? 0 : "4rem"}
+      // mt={isMobile ? 0 : "4rem"}
       h={isMobile ? "auto" : "fit-content"}
       position={isMobile ? "relative" : "sticky"}
       top={isMobile ? "0" : "4rem"}
